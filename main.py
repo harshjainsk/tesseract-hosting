@@ -43,8 +43,8 @@ def get_ss_to_text_to_clipboard():
                 print(im)
                 # cv2.imwrite("mouse-module-output.PNG", im)
 
-                pytesseract.pytesseract.tesseract_cmd = r"C:/Program Files\Tesseract-OCR\tesseract.exe"
-
+                # pytesseract.pytesseract.tesseract_cmd = r"C:/Program Files\Tesseract-OCR\tesseract.exe"
+                pytesseract.pytesseract.tesseract_cmd = "/app/.apt/usr/bin/tesseract"
                 # img = cv2.imread('mouse-module-output.PNG')
                 # print("image read successfully")
 
