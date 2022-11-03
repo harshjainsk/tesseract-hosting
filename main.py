@@ -1,7 +1,7 @@
 import json
 
 import pyperclip
-from flask import Flask, request, jsonify, render_template, flash
+from flask import Flask
 import mouse
 import pyautogui
 from PIL import ImageGrab
@@ -59,6 +59,8 @@ def get_ss_to_text_to_clipboard():
                 print("No image given as input")
                 pyperclip.copy("No image given as input")
                 # return "No image"
+
+
 
 
 if __name__ == '__main__':
